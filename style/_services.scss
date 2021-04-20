@@ -1,0 +1,63 @@
+@import "./basic";
+@import "./variables";
+
+.services {
+    @include container-grid;
+    height: 750px;
+    background-color: rgb(255, 255, 255);
+
+    &-title {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 45%;
+        height: 35%;
+        margin: 0 auto;
+
+        &__heading {
+            text-transform: uppercase;
+            padding: 2% 0 2% 0;
+        }
+        &__separator {
+            padding: 2% 0 2% 0;
+        }
+        &__text {
+            text-align: center;
+            padding: 2% 0 2% 0;
+        }
+    }
+    &-content{
+        height: 65%;
+        display: flex;
+        flex-direction: column;
+       flex-wrap: wrap;
+
+
+
+        &__item{
+            width: 50%;
+            height: 50%;
+        display: flex;
+       
+        }
+        &__img{
+width: 30%;
+margin: auto;
+text-align: center;
+
+        }
+        &__info{
+width: 70%;
+margin: auto;
+
+        }
+        &__heading{
+margin-bottom: 10%;
+color: $main-text-color;
+        }
+        &__text{
+line-height: 1.5;
+        }
+    }
+}

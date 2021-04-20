@@ -1,0 +1,16 @@
+.nav-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-family: "OpenSans";
+}
+
+.nav-wrappera {
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+/*# sourceMappingURL=nav.css.map */

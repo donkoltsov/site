@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-container {
+  margin: 0 auto;
+  width: 1170px;
+  position: absolute;
+  height: 100%;
+}
+
+.main-info {
+  height: 700px;
+  background: url("./assets/PICTURE.png");
+}
+
+.main-info__content {
+  position: relative;
+  background: rgba(0, 199, 252, 0.5);
+  width: 60%;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  padding: 4% 5% 4% 20%;
+  color: #fff;
+}
+
+.main-info__title {
+  margin-bottom: 5%;
+}
+/*# sourceMappingURL=info.css.map */

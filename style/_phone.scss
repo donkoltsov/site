@@ -1,0 +1,41 @@
+@import "./basic";
+@import "./variables";
+
+.phone {
+    height: 530px;
+    background: black;
+
+    &__content {
+        @include container-grid;
+        position: relative;
+        height: 100%;
+    }
+    &__text {
+        background: rgba(0, 199, 252, 0.5);
+        width: 60%;
+        height: 330px;
+        position: relative;
+        top: 20%;
+        left: 49%;
+        padding: 4% 10% 4% 5%;
+        line-height: 2.5;
+        color: white;
+
+        & h2 {
+            margin-bottom: 6%;
+        }
+    }
+&-text__item{
+    display: flex;
+    align-items: center;
+
+    & img{
+        margin-left: 10%;
+        width: 20px;
+        height: 20px;
+    }
+    & p{
+        margin-left: 7%;
+    }
+}
+}

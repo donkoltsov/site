@@ -1,0 +1,73 @@
+@import './variables.scss';
+@import './basic.scss';
+
+.header {
+    background: black;
+    height: 75px;
+
+    &-container {
+        @include container-grid;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        border-bottom: $header-container-border;
+    }
+
+    &-logo {
+        width: 35%;
+    }
+
+    &-nav {
+        display: flex;
+        width: 50%;
+
+        &-wrapper {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            font-size: 13px;
+            text-transform: uppercase;
+            list-style-type: none;
+
+        
+        }
+        &__item a {
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+            text-decoration: none;
+            &:hover {
+                color: $main-text-color;
+                border-bottom: 2px $main-text-color solid;
+                padding-bottom: 29px;
+            }
+        }
+    }
+
+    &-search {
+        width: 25%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        &__item { 
+            margin-right: 5px;
+            outline: none;
+            background: inherit;
+            color: #fff;
+            border: none;
+        }
+    }
+
+    &-search__separator {
+        margin-right: 20px;
+
+    }
+
+    &-search__icon {
+        width: 15px;
+        height: 15px;
+        cursor: pointer;
+    }
+
+
+}
